@@ -18,12 +18,3 @@ function handleCheck(e) {
 }
 
 checkboxes.forEach(item => item.addEventListener('click', handleCheck));
-
-
-/*
-10 remember last clicked index
-20 listen for space
-30 listen for click
-40 remember last clicked index
-50 turn checked on
-*/
