@@ -7,6 +7,9 @@ function handleCheck(e) {
   if(e.shiftKey && this.checked) {
     checkboxes.forEach(checkbox => {
       console.log(checkbox);
+      if (checkbox === this || checkbox === lastChecked) {
+        inBetween = !inBetween;
+      }
     })
   }
   lastChecked = this; //this is referencing what has been clicked. stores reference to the element 
